@@ -9,9 +9,9 @@
             <img src = "{{url_for('static', filename='images/museo.jpg')}}">
         </div>
         <div class="principale">
-            <img src = "{{url_for('static', filename='images/persona.jpg')}}" class="piccolo">
-            <img src = "{{url_for('static', filename='images/gruppo.jpg')}}" class="piccolo"> 
-            <img src = "{{url_for('static', filename='images/giuda.jpg')}}" class="piccolo">
+            <a href = "/visitasingola"><img src = "{{url_for('static', filename='images/persona.jpg')}}" class="piccolo"></a>
+            <a href = "/visitagruppo"><img src = "{{url_for('static', filename='images/gruppo.jpg')}}" class="piccolo"></a> 
+            <a href = "/visitaguidata"><img src = "{{url_for('static', filename='images/giuda.jpg')}}" class="piccolo"></a>
         </div>
     </body>
 </html>
