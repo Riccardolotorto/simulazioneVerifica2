@@ -3,10 +3,10 @@ app = Flask(__name__)
 
 import datetime
 def controllo():
-    adesso = int(datetime.datetime().time().hour)
-    if adesso < 12:
+    orario = int(datetime.datetime.now().time().hour)
+    if orario <= 12:
         colore = "lightblue"
-    elif adesso > 12 and adesso < 20:
+    elif orario > 12 and orario < 20:
         colore = "Yellow"
     else:
         colore = "Blue"
